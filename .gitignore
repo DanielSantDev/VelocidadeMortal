@@ -73,3 +73,7 @@ crashlytics-build.properties
 /.vscode
 .vsconfig
 UpgradeLog.htm
+ProjectSettings/ProjectVersion.txt
+Packages/packages-lock.json
+*.json
+*.txt
