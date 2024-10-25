@@ -60,6 +60,7 @@ sysinfo.txt
 *.aab
 *.unitypackage
 *.app
+*.unity.meta
 
 # Crashlytics generated file
 crashlytics-build.properties
@@ -77,3 +78,4 @@ ProjectSettings/ProjectVersion.txt
 Packages/packages-lock.json
 *.json
 *.txt
+Assets/Sprites/Hyena.png.meta
