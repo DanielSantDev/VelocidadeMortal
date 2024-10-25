@@ -24,4 +24,19 @@ public class GameOverPanelScript : MonoBehaviour
     {
         SceneManager.LoadScene("Assets/Scenes/SampleScene.unity");
     }
+
+    public void LoadMediumModeScene()
+    {
+        SceneManager.LoadScene("Assets/Scenes/LoadMediumModeScene.unity");
+    }
+
+    public void LoadHardModeScene()
+    {
+        SceneManager.LoadScene("Assets/Scenes/LoadHardModeScene.unity");
+    }
+
+    public void LoadImpossibleModeScene()
+    {
+        SceneManager.LoadScene("Assets/Scenes/LoadImpossibleModeScene.unity");
+    }
 }
