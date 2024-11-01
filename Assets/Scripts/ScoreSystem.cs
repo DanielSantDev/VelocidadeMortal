@@ -10,6 +10,28 @@ public class ScoreSystem : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public string MediumModeScene;
 
+    private static ScoreSystem instance;
+
+    private void Awake()
+    {
+        // Verifica se existe outra instância ativa e a destrói para evitar duplicação
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void Start()
+    {
+        //score = PlayerPrefs.GetInt("CurrentScore", 0);
+        scoreText.text = "Score : " + score;
+    }
+
     void Update()
     {
         if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().isGameOver){
@@ -36,6 +58,7 @@ public class ScoreSystem : MonoBehaviour
 
     private void LoadNextScene()
     {
+        //PlayerPrefs.SetInt("CurrentScore", score);
         SceneManager.LoadScene("Assets/Scenes/MediumModeScene.unity");
     }
 
