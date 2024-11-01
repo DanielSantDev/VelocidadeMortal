@@ -835,6 +835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   scoreText: {fileID: 1449098770}
+  MediumModeScene: 
 --- !u!61 &1031454589
 BoxCollider2D:
   m_ObjectHideFlags: 0
