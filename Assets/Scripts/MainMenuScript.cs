@@ -11,6 +11,7 @@ public class MainMenuScrpit : MonoBehaviour
     void Start()
     {
         HighScoreText.text = "High Score : " + PlayerPrefs.GetInt("HighScore");
+        PlayerPrefs.SetInt("SceneLoaded", 0);
     }
 
     void Update()
