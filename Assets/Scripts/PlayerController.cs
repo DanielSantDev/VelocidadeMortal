@@ -25,8 +25,6 @@ public class PlayerController : MonoBehaviour
         if(!isGameOver){
             transform.position = Vector3.right * runSpeed * Time.deltaTime + transform.position;
         }
-
-        //transform.position = Vector3.right * runSpeed * Time.deltaTime + transform.position;
     
         if(jumpCount == 2) {
             canJump = false;
