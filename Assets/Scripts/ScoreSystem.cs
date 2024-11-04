@@ -9,42 +9,49 @@ public class ScoreSystem : MonoBehaviour
     public int score = 0;
     public TextMeshProUGUI scoreText;
     public string MediumModeScene;
-
-    private static ScoreSystem instance;
-
-    private void Awake()
-    {
-        // Verifica se existe outra instância ativa e a destrói para evitar duplicação
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
+    public string HardModeScene;
+    public string ImpossibleModeScene;
+    private const int MediumModeScore = 1;
+    private const int HardModeScore = 2;
+    private const int ImpossibleModeScore = 3;
 
     void Start()
     {
-        //score = PlayerPrefs.GetInt("CurrentScore", 0);
         scoreText.text = "Score : " + score;
+
+        if (!PlayerPrefs.HasKey("SceneLoaded"))
+        {
+            PlayerPrefs.SetInt("SceneLoaded", 0);
+        }
     }
 
     void Update()
     {
-        if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().isGameOver){
-            if(PlayerPrefs.GetInt("HighScore") < score){
+        if(GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().isGameOver)
+        {
+            if(PlayerPrefs.GetInt("HighScore") < score)
+            {
                 PlayerPrefs.SetInt("HighScore", score);
                 Debug.Log("New High score is "+ score);
             } 
         }
 
-        if (score >= 2)
+        if (score >= ImpossibleModeScore && PlayerPrefs.GetInt("SceneLoaded") < ImpossibleModeScore)
         {
-            LoadNextScene();
+            PlayerPrefs.SetInt("SceneLoaded", ImpossibleModeScore);
+            SceneManager.LoadScene("Assets/Scenes/ImpossibleModeScene.unity");
         }
+        else if (score >= HardModeScore && PlayerPrefs.GetInt("SceneLoaded") < HardModeScore)
+        {
+            PlayerPrefs.SetInt("SceneLoaded", HardModeScore);
+            SceneManager.LoadScene("Assets/Scenes/HardModeScene.unity");
+        }
+        else if (score >= MediumModeScore && PlayerPrefs.GetInt("SceneLoaded") < MediumModeScore)
+        {
+            PlayerPrefs.SetInt("SceneLoaded", MediumModeScore);
+            SceneManager.LoadScene("Assets/Scenes/MediumModeScene.unity");
+        }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision) 
@@ -55,11 +62,5 @@ public class ScoreSystem : MonoBehaviour
             scoreText.text = "Score : " + score;
         }
     }
-
-    private void LoadNextScene()
-    {
-        //PlayerPrefs.SetInt("CurrentScore", score);
-        SceneManager.LoadScene("Assets/Scenes/MediumModeScene.unity");
-    }
-
 }
+ 
