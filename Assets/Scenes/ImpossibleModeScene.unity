@@ -786,9 +786,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 168a87e6b5d01dd4bb38ced253565548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle1: {fileID: 4475278924516659129, guid: ed025c75431471e439d093994e43cb8b, type: 3}
-  obstacle2: {fileID: 4203560845487062620, guid: 91e7f5f8cbc03b14a91b721cee8de6d6, type: 3}
-  obstacle3: {fileID: 92895145474283542, guid: 59095d5975b3ad8479e7c15c977fa895, type: 3}
+  obstacle1: {fileID: 7107802825263009983, guid: 07fa04c2c81025a4089ac67a459f9700, type: 3}
+  obstacle2: {fileID: 5944582688690967923, guid: a34cf0393640da9498dff5ab9ff79f47, type: 3}
+  obstacle3: {fileID: 938364499259542653, guid: c38e4980efb176b4a8bf7c3801958175, type: 3}
   obstacleSpawnInterval: 2.5
 --- !u!1 &1031454586
 GameObject:
@@ -835,6 +835,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   scoreText: {fileID: 1449098770}
+  MediumModeScene: 
+  HardModeScene: 
+  ImpossibleModeScene: 
 --- !u!61 &1031454589
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -965,7 +968,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'High Score: 10'
+  m_Text: 'High Score: 00'
 --- !u!222 &1115406225
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1832,7 +1835,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Score: 10'
+  m_Text: 'Score: 0'
 --- !u!222 &1606603914
 CanvasRenderer:
   m_ObjectHideFlags: 0
