@@ -25,11 +25,11 @@ public class ObstacleSpawner : MonoBehaviour
         int random = Random.Range(1, 4);
 
         if(random == 1) {
-            Instantiate(obstacle1, new Vector3(transform.position.x, -0.5f, 0), Quaternion.identity);
+            Instantiate(obstacle1, new Vector3(transform.position.x + 2.0f, 1f, 0), Quaternion.identity);
         } else if(random == 2) {
-            Instantiate(obstacle2, new Vector3(transform.position.x, -0.5f, 0), Quaternion.identity);
+            Instantiate(obstacle2, new Vector3(transform.position.x + 2.0f, 1f, 0), Quaternion.identity);
         } else if(random == 3) {
-            Instantiate(obstacle3, new Vector3(transform.position.x, -0.5f, 0), Quaternion.identity);
+            Instantiate(obstacle3, new Vector3(transform.position.x + 2.0f, 1f, 0), Quaternion.identity);
         } 
     }
     
