@@ -11,15 +11,15 @@ public class ScoreSystem : MonoBehaviour
     public string MediumModeScene;
     public string HardModeScene;
     public string ImpossibleModeScene;
-    private const int MediumModeScore = 1;
-    private const int HardModeScore = 2;
-    private const int ImpossibleModeScore = 3;
+    private const int MediumModeScore = 10;
+    private const int HardModeScore = 20;
+    private const int ImpossibleModeScore = 30;
 
     void Start()
     {
         scoreText.text = "Score : " + score;
 
-        if (!PlayerPrefs.HasKey("SceneLoaded"))
+        if(!PlayerPrefs.HasKey("SceneLoaded"))
         {
             PlayerPrefs.SetInt("SceneLoaded", 0);
         }
