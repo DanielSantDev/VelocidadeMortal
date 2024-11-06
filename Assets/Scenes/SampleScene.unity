@@ -787,8 +787,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacle1: {fileID: 4475278924516659129, guid: ed025c75431471e439d093994e43cb8b, type: 3}
-  obstacle2: {fileID: 4203560845487062620, guid: 91e7f5f8cbc03b14a91b721cee8de6d6, type: 3}
-  obstacle3: {fileID: 92895145474283542, guid: 59095d5975b3ad8479e7c15c977fa895, type: 3}
+  obstacle2: {fileID: 9086554810929593017, guid: c7824dafc0905ce4cb406f7a9471775d, type: 3}
+  obstacle3: {fileID: 958171224929325881, guid: 59095d5975b3ad8479e7c15c977fa895, type: 3}
   obstacleSpawnInterval: 2.5
 --- !u!1 &1031454586
 GameObject:
@@ -836,6 +836,8 @@ MonoBehaviour:
   score: 0
   scoreText: {fileID: 1449098770}
   MediumModeScene: 
+  HardModeScene: 
+  ImpossibleModeScene: 
 --- !u!61 &1031454589
 BoxCollider2D:
   m_ObjectHideFlags: 0
