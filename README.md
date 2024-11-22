@@ -24,6 +24,17 @@ Você pode baixar **Velocidade Mortal** clicando no link abaixo:
   - `Espaço`: Saltar
 - **Dicas**:
   - Fique atento aos obstáculos !
+ 
+## 🎮 Screenshots
+
+![Velocidade Mortal Banner](./Assets/Sprites/Screenshots/EasyMode.png)
+![Velocidade Mortal Banner](./Assets/Sprites/Screenshots/MediumMode.png)
+![Velocidade Mortal Banner](./Assets/Sprites/Screenshots/HardMode.png)
+![Velocidade Mortal Banner](./Assets/Sprites/Screenshots/ImpossibleMode.png)
+![Velocidade Mortal Banner](./Assets/Sprites/Screenshots/InitialPanel.png)
+![Velocidade Mortal Banner](./Assets/Sprites/Screenshots/Settings.png)
+![Velocidade Mortal Banner](./Assets/Sprites/Screenshots/GameOverPanel.png)
+
 
 ## 🛠️ Tecnologias Utilizadas
 
