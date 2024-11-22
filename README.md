@@ -11,13 +11,19 @@
 - **Sistema de Pontuação**: A pontuação é baseada na distância percorrida e nos obstáculos superados.
 - **Feedback Sensorial**: Sons e gráficos que aprimoram a imersão.
 
+## 🎮 Baixe o Jogo
+
+Você pode baixar **Velocidade Mortal** clicando no link abaixo:
+
+[**Baixar Velocidade Mortal**](https://danielsantdev.itch.io/deadly-speed)
+
 ## 🎮 Como Jogar
 
 - **Objetivo**: Percorra a maior distância possível enquanto desvia de obstáculos.
 - **Controles**:
   - `Espaço`: Saltar
 - **Dicas**:
-  - Fique atento aos obstaculos !
+  - Fique atento aos obstáculos !
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -25,3 +31,11 @@
 - **C#**: Linguagem de programação para scripts de controle, física e mecânicas de jogo.
 - **Sistema de UI e Text**: Exibição de pontuação e informações em tempo real.
 - **Physics 2D**: Implementação de colisões para detecção de obstáculos e pontuação.
+
+## Sobre o Desenvolvedor
+
+Criado por DanielSantDev, **Velocidade Mortal** é uma demonstração de criatividade, programação e paixão por jogos. O jogo foi desenvolvido na plataforma Unity.
+
+## Licença
+
+Este projeto é distribuído sob a MIT License. Consulte o arquivo LICENSE para mais detalhes.
