@@ -11,6 +11,10 @@
 - **Sistema de Pontuação**: A pontuação é baseada na distância percorrida e nos obstáculos superados.
 - **Feedback Sensorial**: Sons e gráficos que aprimoram a imersão.
 
+## 🎮 Tutorial de como jogar e GamePlay
+
+[**Tutorial - Velocidade Mortal**](https://www.youtube.com/watch?v=U8xAj0F-m6c)
+
 ## 🎮 Baixe o Jogo
 
 Você pode baixar **Velocidade Mortal** clicando no link abaixo:
